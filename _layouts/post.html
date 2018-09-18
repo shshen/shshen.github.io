@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<header>
+    <div class="container" style="padding-top:50px;">
+	<h1><a href="{{ site.baseurl }}">{{ page.title }}</a></h1>
+	{% if page.title %}<h3><a href="{{ site.baseurl }}">{{ page.subtitle }}</a></h3>{% endif %}
+	<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</time>
+	</div>
+</header>
+
+<main>
+    <article>		   
+{{ content }}			
+    </article>		
+</main>
